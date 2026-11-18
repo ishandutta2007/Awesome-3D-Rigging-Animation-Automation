@@ -1,0 +1,184 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a14" />
+      <stop offset="45%" stop-color="#121028" />
+      <stop offset="100%" stop-color="#070913" />
+    </linearGradient>
+
+    <linearGradient id="neonCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="100%" stop-color="#4facfe" />
+    </linearGradient>
+
+    <linearGradient id="neonPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f355da" />
+      <stop offset="100%" stop-color="#7000ff" />
+    </linearGradient>
+
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="40%" stop-color="#f0f6fc" />
+      <stop offset="75%" stop-color="#38ef7d" />
+      <stop offset="100%" stop-color="#11998e" />
+    </linearGradient>
+
+    <linearGradient id="glowPillGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(112, 0, 255, 0.3)" />
+      <stop offset="100%" stop-color="rgba(0, 242, 254, 0.2)" />
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="glowFilter" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Grid Pattern -->
+    <pattern id="cyberGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255, 255, 255, 0.04)" stroke-width="1" />
+    </pattern>
+  </defs>
+
+  <style>
+    @keyframes floatOrb1 {
+      0% { transform: translate(0px, 0px) scale(1); }
+      50% { transform: translate(45px, -25px) scale(1.12); }
+      100% { transform: translate(0px, 0px) scale(1); }
+    }
+    @keyframes floatOrb2 {
+      0% { transform: translate(0px, 0px) scale(1); }
+      50% { transform: translate(-40px, 30px) scale(0.9); }
+      100% { transform: translate(0px, 0px) scale(1); }
+    }
+    @keyframes pulseRing {
+      0% { r: 12; opacity: 0.8; }
+      50% { r: 24; opacity: 0.15; }
+      100% { r: 12; opacity: 0.8; }
+    }
+    @keyframes boneDash {
+      0% { stroke-dashoffset: 0; }
+      100% { stroke-dashoffset: -40; }
+    }
+    @keyframes scanline {
+      0% { transform: translateY(-20px); opacity: 0; }
+      50% { opacity: 0.6; }
+      100% { transform: translateY(440px); opacity: 0; }
+    }
+    .orb1 { animation: floatOrb1 9s ease-in-out infinite; }
+    .orb2 { animation: floatOrb2 11s ease-in-out infinite; }
+    .ring-pulse { animation: pulseRing 3.5s ease-in-out infinite; }
+    .dash-line { stroke-dasharray: 6, 6; animation: boneDash 2.5s linear infinite; }
+    .scanner { animation: scanline 8s linear infinite; }
+    .mono-label { font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="1200" height="420" rx="16" fill="url(#bgGrad)" />
+  <rect width="1200" height="420" rx="16" fill="url(#cyberGrid)" />
+
+  <!-- Dynamic Glowing Ambient Orbs (Background layer) -->
+  <g class="orb1" filter="url(#glowFilter)">
+    <circle cx="220" cy="90" r="140" fill="url(#neonPurple)" opacity="0.32" />
+  </g>
+  <g class="orb2" filter="url(#glowFilter)">
+    <circle cx="980" cy="330" r="160" fill="url(#neonCyan)" opacity="0.25" />
+  </g>
+  <g class="orb1" filter="url(#glowFilter)">
+    <circle cx="1060" cy="80" r="90" fill="#38ef7d" opacity="0.18" />
+  </g>
+
+  <!-- Dynamic Animated Rigging Skeleton Nodes (Decorative Background Animation) -->
+  <g stroke="rgba(0, 242, 254, 0.4)" stroke-width="2" class="dash-line">
+    <!-- Stylized 3D Rig Bones Rigged Character in Background -->
+    <line x1="930" y1="90" x2="980" y2="140" />
+    <line x1="980" y1="140" x2="980" y2="230" />
+    <line x1="980" y1="160" x2="910" y2="210" />
+    <line x1="910" y1="210" x2="870" y2="280" />
+    <line x1="980" y1="160" x2="1050" y2="210" />
+    <line x1="1050" y1="210" x2="1090" y2="280" />
+    <line x1="980" y1="230" x2="940" y2="330" />
+    <line x1="940" y1="330" x2="930" y2="390" />
+    <line x1="980" y1="230" x2="1020" y2="330" />
+    <line x1="1020" y1="330" x2="1050" y2="390" />
+  </g>
+
+  <!-- Skeleton Joint Rings & Glowing Nodes -->
+  <g>
+    <circle cx="930" cy="90" r="18" fill="none" stroke="#00f2fe" stroke-width="2" class="ring-pulse" />
+    <circle cx="930" cy="90" r="6" fill="#00f2fe" filter="url(#softGlow)" />
+    <circle cx="980" cy="140" r="5" fill="#f355da" filter="url(#softGlow)" />
+    <circle cx="980" cy="160" r="4" fill="#ffffff" />
+    <circle cx="910" cy="210" r="4.5" fill="#00f2fe" />
+    <circle cx="870" cy="280" r="4.5" fill="#38ef7d" />
+    <circle cx="1050" cy="210" r="4.5" fill="#00f2fe" />
+    <circle cx="1090" cy="280" r="4.5" fill="#38ef7d" />
+    <circle cx="980" cy="230" r="6" fill="#f355da" filter="url(#softGlow)" />
+    <circle cx="940" cy="330" r="4.5" fill="#00f2fe" />
+    <circle cx="930" cy="390" r="4.5" fill="#38ef7d" />
+    <circle cx="1020" cy="330" r="4.5" fill="#00f2fe" />
+    <circle cx="1050" cy="390" r="4.5" fill="#38ef7d" />
+  </g>
+
+  <!-- Subtle Sweeping Scan Line -->
+  <line x1="40" y1="0" x2="1160" y2="0" stroke="rgba(0, 242, 254, 0.4)" stroke-width="1.5" class="scanner" />
+
+  <!-- FOREGROUND LAYER: Badges, Pills, Titles & Subtitles (Always Crisp and on Top) -->
+
+  <!-- Top Category Pill -->
+  <g transform="translate(60, 48)">
+    <rect width="320" height="34" rx="17" fill="url(#glowPillGrad)" stroke="rgba(0, 242, 254, 0.5)" stroke-width="1.2" />
+    <circle cx="18" cy="17" r="5" fill="#38ef7d" filter="url(#softGlow)" />
+    <text x="34" y="22" fill="#00f2fe" font-size="13" font-weight="700" letter-spacing="1.2" class="mono-label">
+      CURATED ECOSYSTEM • 2026 EDITION
+    </text>
+  </g>
+
+  <!-- Main Title -->
+  <g transform="translate(60, 140)">
+    <text x="0" y="0" fill="url(#textGrad)" font-size="44" font-weight="900" letter-spacing="-0.8" class="mono-label" filter="url(#softGlow)">
+      Awesome 3D Rigging &amp;
+    </text>
+    <text x="0" y="52" fill="#ffffff" font-size="44" font-weight="900" letter-spacing="-0.8" class="mono-label">
+      Animation Automation 🚀
+    </text>
+  </g>
+
+  <!-- Subtitle / Tagline -->
+  <g transform="translate(60, 240)">
+    <text x="0" y="0" fill="#a0aec0" font-size="18" font-weight="500" class="mono-label">
+      The definitive index of Text-to-Rigged-Animation, AI Motion Capture,
+    </text>
+    <text x="0" y="26" fill="#a0aec0" font-size="18" font-weight="500" class="mono-label">
+      Skeletal Binding Engines, Neural Weighting &amp; Headless Pipelines.
+    </text>
+  </g>
+
+  <!-- Feature Pills in Foreground -->
+  <g transform="translate(60, 310)">
+    <!-- Pill 1: Text-to-Rig -->
+    <rect x="0" y="0" width="145" height="36" rx="8" fill="rgba(255, 255, 255, 0.05)" stroke="rgba(255, 255, 255, 0.15)" stroke-width="1" />
+    <text x="14" y="23" fill="#e2e8f0" font-size="13" font-weight="600" class="mono-label">⚡ Text-to-Rig</text>
+
+    <!-- Pill 2: AI MoCap -->
+    <rect x="157" y="0" width="135" height="36" rx="8" fill="rgba(255, 255, 255, 0.05)" stroke="rgba(255, 255, 255, 0.15)" stroke-width="1" />
+    <text x="171" y="23" fill="#e2e8f0" font-size="13" font-weight="600" class="mono-label">🎥 AI MoCap</text>
+
+    <!-- Pill 3: Auto-Weighting -->
+    <rect x="304" y="0" width="168" height="36" rx="8" fill="rgba(255, 255, 255, 0.05)" stroke="rgba(255, 255, 255, 0.15)" stroke-width="1" />
+    <text x="318" y="23" fill="#e2e8f0" font-size="13" font-weight="600" class="mono-label">🦴 Auto-Weighting</text>
+
+    <!-- Pill 4: Headless Blender -->
+    <rect x="484" y="0" width="175" height="36" rx="8" fill="rgba(255, 255, 255, 0.05)" stroke="rgba(255, 255, 255, 0.15)" stroke-width="1" />
+    <text x="498" y="23" fill="#e2e8f0" font-size="13" font-weight="600" class="mono-label">⚙️ Headless Blender</text>
+  </g>
+
+  <!-- Outer Border Highlight -->
+  <rect x="1" y="1" width="1198" height="418" rx="15" fill="none" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1" />
+</svg>
