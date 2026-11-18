@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-3D-Rigging-Animation-Automation/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-3D-Rigging-Animation-Automation?style=social" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-3D-Rigging-Animation-Automation/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-3D-Rigging-Animation-Automation?style=social" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-3D-Rigging-Animation-Automation/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-3D-Rigging-Animation-Automation?style=social" alt="GitHub Forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-3D-Rigging-Animation-Automation/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-3D-Rigging-Animation-Automation" alt="Open Issues" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-3D-Rigging-Animation-Automation/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License" /></a>
@@ -69,7 +69,7 @@ Below is a structured comparison of the top commercial and hosted cloud platform
 
 Explore the leading open-source libraries, autonomous auto-riggers, deep-learning models, and motion capture toolkits. Repositories are **ranked descending by GitHub stargazers count** with live stargazer social badges.
 
-| Repository & Creator 📦 | Stars 🌟 | Primary License ⚖️ | Tech Stack 🛠️ | Description & Architectural Highlights 🔍 |
+| Repository & Creator 📦 | GitHub_Stars 🌟 | Primary License ⚖️ | Tech Stack 🛠️ | Description & Architectural Highlights 🔍 |
 | :--- | :--- | :--- | :--- | :--- |
 | **[CMU-Perceptual-Computing-Lab/openpose](https://github.com/CMU-Perceptual-Computing-Lab/openpose)** | [![Stars](https://img.shields.io/github/stars/CMU-Perceptual-Computing-Lab/openpose?style=social&color=white)](https://github.com/CMU-Perceptual-Computing-Lab/openpose/stargazers) | Non-commercial / Research | C++, CUDA, Python | The landmark multi-person 2D/3D keypoint detection framework powering body, foot, hand, and facial motion capture pipelines worldwide. |
 | **[blender/blender](https://github.com/blender/blender)** | [![Stars](https://img.shields.io/github/stars/blender/blender?style=social&color=white)](https://github.com/blender/blender/stargazers) | GPL-2.0+ | C, C++, Python | The flagship open-source 3D production suite featuring **Rigify**, Bendy Bones, automatic heat-weight skinning, IK/FK solvers, NLA clip blending, and headless CLI scripting. |
@@ -144,7 +144,7 @@ Contributions from technical artists, animators, and software engineers are very
 1. **Fork** this repository to your GitHub account 🍴
 2. **Add or update** entries in `README.md` following the established table format:
    - For SaaS tools: include verified starting pricing and free tier/trial limits.
-   - For Open-Source projects: include the GitHub stars badge, license, tech stack, and concise description.
+   - For Open-Source projects: include the GitHub_Stars_Badge, license, tech stack, and concise description.
 3. **Submit a Pull Request (PR)** with a brief description of the tool and why it benefits the 3D animation automation community 🚀
 
 ---
